@@ -1,0 +1,3 @@
+Symlinking /home/yao/ros_tutorials/devel/share/rostopic/cmake/rostopicConfig.cmake
+Symlinking /home/yao/ros_tutorials/devel/share/rostopic/cmake/rostopicConfig-version.cmake
+Symlinking /home/yao/ros_tutorials/devel/lib/pkgconfig/rostopic.pc

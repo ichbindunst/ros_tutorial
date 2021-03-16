@@ -1,0 +1,8 @@
+prefix=/home/yao/ros_tutorials/devel/.private/rostopic_examples
+
+Name: rostopic_examples
+Description: Description of rostopic_examples
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs

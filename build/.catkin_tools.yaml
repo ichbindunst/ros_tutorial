@@ -1,0 +1,6 @@
+devel_space: /home/yao/ros_tutorials/devel
+install: false
+install_space: /home/yao/ros_tutorials/install
+profile: default
+source_space: /home/yao/ros_tutorials/src
+workspace: /home/yao/ros_tutorials
