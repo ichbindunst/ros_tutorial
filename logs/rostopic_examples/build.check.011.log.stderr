@@ -1,0 +1,5 @@
+CMake Error at /home/yao/ros_tutorials/src/rostopic_examples/CMakeLists.txt:50 (add_message_files):
+  Unknown CMake command "add_message_files".
+
+
+make: *** [cmake_check_build_system] Error 1

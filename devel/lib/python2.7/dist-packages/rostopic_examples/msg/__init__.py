@@ -1,0 +1,1 @@
+/home/yao/ros_tutorials/devel/.private/rostopic_examples/lib/python2.7/dist-packages/rostopic_examples/msg/__init__.py

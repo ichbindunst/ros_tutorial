@@ -6,9 +6,9 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "turtle_circle_publisher");
     ros::NodeHandle nh;
 
-    ros::Publisher turtle_circle_pub = nh.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel", 10);
+    ros::Publisher turtle_circle_pub = nh.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel", 1);
 
-    ros::Rate loop_rate(10);
+    ros::Rate loop_rate(1);
     while (ros::ok())
     {
         geometry_msgs::Twist turtle_circle_msg;

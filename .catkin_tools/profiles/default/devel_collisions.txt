@@ -1,1 +1,1 @@
-/home/yao/ros_tutorials/devel/./cmake.lock 12
+/home/yao/ros_tutorials/devel/./cmake.lock 24

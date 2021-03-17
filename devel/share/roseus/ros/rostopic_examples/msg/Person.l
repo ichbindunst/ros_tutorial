@@ -1,0 +1,1 @@
+/home/yao/ros_tutorials/devel/.private/rostopic_examples/share/roseus/ros/rostopic_examples/msg/Person.l

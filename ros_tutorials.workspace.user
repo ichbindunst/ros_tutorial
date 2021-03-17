@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.9.2, 2021-03-14T19:11:38. -->
+<!-- Written by QtCreator 4.9.2, 2021-03-17T23:27:49. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -111,11 +111,10 @@
     <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
     <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges">
-     <value type="QString">OLDPWD</value>
+     <value type="QString">PATH=/opt/ros/kinetic/bin:/home/yao/.nvm/versions/node/v14.4.0/bin:/home/yao/.local/share/umake/bin:/home/yao/bin:/home/yao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin</value>
      <value type="QString">PWD=/home/yao/ros_tutorials</value>
-     <value type="QString">ROSLISP_PACKAGE_DIRECTORIES=/home/yao/ros_tutorials/devel/share/common-lisp:/home/yao/alt_iiwa_ros_ws/devel/share/common-lisp</value>
-     <value type="QString">ROS_PACKAGE_PATH=/home/yao/ros_tutorials/src/rostopic:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/iiwa_control:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/iiwa_description:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/iiwa_gazebo:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/iiwa_msgs:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/iiwa_ros:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/iiwa_hw:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/iiwa_moveit:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/my_iiwa_moveit:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/my_iiwa_ros:/opt/ros/kinetic/share</value>
-     <value type="QString">SHLVL=42</value>
+     <value type="QString">PYTHONPATH=/home/yao/ros_tutorials/devel/lib/python2.7/dist-packages:/home/yao/alt_iiwa_ros_ws/devel/lib/python2.7/dist-packages:/opt/ros/kinetic/lib/python2.7/dist-packages</value>
+     <value type="QString">SHLVL=98</value>
      <value type="QString">_=/usr/bin/env</value>
     </valuelist>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Debug</value>

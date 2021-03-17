@@ -1,0 +1,21 @@
+Symlinking /home/yao/ros_tutorials/devel/share/rostopic_examples/cmake/rostopic_examples-msg-extras.cmake
+Linked: (/home/yao/ros_tutorials/devel/.private/rostopic_examples/share/rostopic_examples/cmake/rostopic_examplesConfig.cmake, /home/yao/ros_tutorials/devel/share/rostopic_examples/cmake/rostopic_examplesConfig.cmake)
+Linked: (/home/yao/ros_tutorials/devel/.private/rostopic_examples/share/rostopic_examples/cmake/rostopic_examplesConfig-version.cmake, /home/yao/ros_tutorials/devel/share/rostopic_examples/cmake/rostopic_examplesConfig-version.cmake)
+Symlinking /home/yao/ros_tutorials/devel/share/rostopic_examples/cmake/rostopic_examples-msg-paths.cmake
+Symlinking /home/yao/ros_tutorials/devel/share/roseus/ros/rostopic_examples/manifest.l
+Symlinking /home/yao/ros_tutorials/devel/share/roseus/ros/rostopic_examples/msg/Person.l
+Symlinking /home/yao/ros_tutorials/devel/share/gennodejs/ros/rostopic_examples/_index.js
+Symlinking /home/yao/ros_tutorials/devel/share/gennodejs/ros/rostopic_examples/msg/Person.js
+Symlinking /home/yao/ros_tutorials/devel/share/gennodejs/ros/rostopic_examples/msg/_index.js
+Symlinking /home/yao/ros_tutorials/devel/share/common-lisp/ros/rostopic_examples/msg/Person.lisp
+Symlinking /home/yao/ros_tutorials/devel/share/common-lisp/ros/rostopic_examples/msg/_package_Person.lisp
+Symlinking /home/yao/ros_tutorials/devel/share/common-lisp/ros/rostopic_examples/msg/rostopic_examples-msg.asd
+Symlinking /home/yao/ros_tutorials/devel/share/common-lisp/ros/rostopic_examples/msg/_package.lisp
+Symlinking /home/yao/ros_tutorials/devel/include/rostopic_examples/Person.h
+Linked: (/home/yao/ros_tutorials/devel/.private/rostopic_examples/lib/pkgconfig/rostopic_examples.pc, /home/yao/ros_tutorials/devel/lib/pkgconfig/rostopic_examples.pc)
+Linked: (/home/yao/ros_tutorials/devel/.private/rostopic_examples/lib/rostopic_examples/turtle_circle_publisher, /home/yao/ros_tutorials/devel/lib/rostopic_examples/turtle_circle_publisher)
+Linked: (/home/yao/ros_tutorials/devel/.private/rostopic_examples/lib/rostopic_examples/own_message_publisher, /home/yao/ros_tutorials/devel/lib/rostopic_examples/own_message_publisher)
+Linked: (/home/yao/ros_tutorials/devel/.private/rostopic_examples/lib/rostopic_examples/turtle_pose_subscriber, /home/yao/ros_tutorials/devel/lib/rostopic_examples/turtle_pose_subscriber)
+Symlinking /home/yao/ros_tutorials/devel/lib/python2.7/dist-packages/rostopic_examples/__init__.py
+Symlinking /home/yao/ros_tutorials/devel/lib/python2.7/dist-packages/rostopic_examples/msg/__init__.py
+Symlinking /home/yao/ros_tutorials/devel/lib/python2.7/dist-packages/rostopic_examples/msg/_Person.py

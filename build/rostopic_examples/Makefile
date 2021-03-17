@@ -56,16 +56,6 @@ CMAKE_BINARY_DIR = /home/yao/ros_tutorials/build/rostopic_examples
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -89,6 +79,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -100,16 +101,15 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
 
-.PHONY : test/fast
+.PHONY : list_install_components/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -122,16 +122,16 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target install/strip
-install/strip/fast: install/strip
+# Special rule for the target test
+test/fast: test
 
-.PHONY : install/strip/fast
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,6 +166,149 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named turtle_pose_subscriber
+
+# Build rule for target.
+turtle_pose_subscriber: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtle_pose_subscriber
+.PHONY : turtle_pose_subscriber
+
+# fast build rule for target.
+turtle_pose_subscriber/fast:
+	$(MAKE) -f CMakeFiles/turtle_pose_subscriber.dir/build.make CMakeFiles/turtle_pose_subscriber.dir/build
+.PHONY : turtle_pose_subscriber/fast
+
+#=============================================================================
+# Target rules for targets named rostopic_examples_genpy
+
+# Build rule for target.
+rostopic_examples_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostopic_examples_genpy
+.PHONY : rostopic_examples_genpy
+
+# fast build rule for target.
+rostopic_examples_genpy/fast:
+	$(MAKE) -f CMakeFiles/rostopic_examples_genpy.dir/build.make CMakeFiles/rostopic_examples_genpy.dir/build
+.PHONY : rostopic_examples_genpy/fast
+
+#=============================================================================
+# Target rules for targets named rostopic_examples_generate_messages_py
+
+# Build rule for target.
+rostopic_examples_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostopic_examples_generate_messages_py
+.PHONY : rostopic_examples_generate_messages_py
+
+# fast build rule for target.
+rostopic_examples_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_py.dir/build.make CMakeFiles/rostopic_examples_generate_messages_py.dir/build
+.PHONY : rostopic_examples_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rostopic_examples_generate_messages_nodejs
+
+# Build rule for target.
+rostopic_examples_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostopic_examples_generate_messages_nodejs
+.PHONY : rostopic_examples_generate_messages_nodejs
+
+# fast build rule for target.
+rostopic_examples_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_nodejs.dir/build.make CMakeFiles/rostopic_examples_generate_messages_nodejs.dir/build
+.PHONY : rostopic_examples_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named rostopic_examples_genlisp
+
+# Build rule for target.
+rostopic_examples_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostopic_examples_genlisp
+.PHONY : rostopic_examples_genlisp
+
+# fast build rule for target.
+rostopic_examples_genlisp/fast:
+	$(MAKE) -f CMakeFiles/rostopic_examples_genlisp.dir/build.make CMakeFiles/rostopic_examples_genlisp.dir/build
+.PHONY : rostopic_examples_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named rostopic_examples_generate_messages_lisp
+
+# Build rule for target.
+rostopic_examples_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostopic_examples_generate_messages_lisp
+.PHONY : rostopic_examples_generate_messages_lisp
+
+# fast build rule for target.
+rostopic_examples_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_lisp.dir/build.make CMakeFiles/rostopic_examples_generate_messages_lisp.dir/build
+.PHONY : rostopic_examples_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rostopic_examples_geneus
+
+# Build rule for target.
+rostopic_examples_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostopic_examples_geneus
+.PHONY : rostopic_examples_geneus
+
+# fast build rule for target.
+rostopic_examples_geneus/fast:
+	$(MAKE) -f CMakeFiles/rostopic_examples_geneus.dir/build.make CMakeFiles/rostopic_examples_geneus.dir/build
+.PHONY : rostopic_examples_geneus/fast
+
+#=============================================================================
+# Target rules for targets named rostopic_examples_generate_messages_eus
+
+# Build rule for target.
+rostopic_examples_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostopic_examples_generate_messages_eus
+.PHONY : rostopic_examples_generate_messages_eus
+
+# fast build rule for target.
+rostopic_examples_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_eus.dir/build.make CMakeFiles/rostopic_examples_generate_messages_eus.dir/build
+.PHONY : rostopic_examples_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named rostopic_examples_gennodejs
+
+# Build rule for target.
+rostopic_examples_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostopic_examples_gennodejs
+.PHONY : rostopic_examples_gennodejs
+
+# fast build rule for target.
+rostopic_examples_gennodejs/fast:
+	$(MAKE) -f CMakeFiles/rostopic_examples_gennodejs.dir/build.make CMakeFiles/rostopic_examples_gennodejs.dir/build
+.PHONY : rostopic_examples_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named rostopic_examples_gencpp
+
+# Build rule for target.
+rostopic_examples_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostopic_examples_gencpp
+.PHONY : rostopic_examples_gencpp
+
+# fast build rule for target.
+rostopic_examples_gencpp/fast:
+	$(MAKE) -f CMakeFiles/rostopic_examples_gencpp.dir/build.make CMakeFiles/rostopic_examples_gencpp.dir/build
+.PHONY : rostopic_examples_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named own_message_publisher
+
+# Build rule for target.
+own_message_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 own_message_publisher
+.PHONY : own_message_publisher
+
+# fast build rule for target.
+own_message_publisher/fast:
+	$(MAKE) -f CMakeFiles/own_message_publisher.dir/build.make CMakeFiles/own_message_publisher.dir/build
+.PHONY : own_message_publisher/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
 
 # Build rule for target.
@@ -190,19 +333,6 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 rosgraph_msgs_generate_messages_eus/fast:
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named clean_test_results
-
-# Build rule for target.
-clean_test_results: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results
-.PHONY : clean_test_results
-
-# fast build rule for target.
-clean_test_results/fast:
-	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
-.PHONY : clean_test_results/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
@@ -335,43 +465,30 @@ rosgraph_msgs_generate_messages_nodejs/fast:
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_py
+# Target rules for targets named turtle_circle_publisher
 
 # Build rule for target.
-std_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
-.PHONY : std_msgs_generate_messages_py
+turtle_circle_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtle_circle_publisher
+.PHONY : turtle_circle_publisher
 
 # fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
+turtle_circle_publisher/fast:
+	$(MAKE) -f CMakeFiles/turtle_circle_publisher.dir/build.make CMakeFiles/turtle_circle_publisher.dir/build
+.PHONY : turtle_circle_publisher/fast
 
 #=============================================================================
-# Target rules for targets named roscpp_generate_messages_lisp
+# Target rules for targets named rostopic_examples_generate_messages_cpp
 
 # Build rule for target.
-roscpp_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
-.PHONY : roscpp_generate_messages_lisp
+rostopic_examples_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostopic_examples_generate_messages_cpp
+.PHONY : rostopic_examples_generate_messages_cpp
 
 # fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_eus
-
-# Build rule for target.
-std_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
+rostopic_examples_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_cpp.dir/build.make CMakeFiles/rostopic_examples_generate_messages_cpp.dir/build
+.PHONY : rostopic_examples_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_nodejs
@@ -426,17 +543,82 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named turtle_circle_publisher
+# Target rules for targets named std_msgs_generate_messages_py
 
 # Build rule for target.
-turtle_circle_publisher: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 turtle_circle_publisher
-.PHONY : turtle_circle_publisher
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
 
 # fast build rule for target.
-turtle_circle_publisher/fast:
-	$(MAKE) -f CMakeFiles/turtle_circle_publisher.dir/build.make CMakeFiles/turtle_circle_publisher.dir/build
-.PHONY : turtle_circle_publisher/fast
+std_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
+
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named _rostopic_examples_generate_messages_check_deps_Person
+
+# Build rule for target.
+_rostopic_examples_generate_messages_check_deps_Person: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rostopic_examples_generate_messages_check_deps_Person
+.PHONY : _rostopic_examples_generate_messages_check_deps_Person
+
+# fast build rule for target.
+_rostopic_examples_generate_messages_check_deps_Person/fast:
+	$(MAKE) -f CMakeFiles/_rostopic_examples_generate_messages_check_deps_Person.dir/build.make CMakeFiles/_rostopic_examples_generate_messages_check_deps_Person.dir/build
+.PHONY : _rostopic_examples_generate_messages_check_deps_Person/fast
+
+#=============================================================================
+# Target rules for targets named clean_test_results
+
+# Build rule for target.
+clean_test_results: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results
+.PHONY : clean_test_results
+
+# fast build rule for target.
+clean_test_results/fast:
+	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
+.PHONY : clean_test_results/fast
+
+#=============================================================================
+# Target rules for targets named rostopic_examples_generate_messages
+
+# Build rule for target.
+rostopic_examples_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostopic_examples_generate_messages
+.PHONY : rostopic_examples_generate_messages
+
+# fast build rule for target.
+rostopic_examples_generate_messages/fast:
+	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages.dir/build.make CMakeFiles/rostopic_examples_generate_messages.dir/build
+.PHONY : rostopic_examples_generate_messages/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -490,6 +672,33 @@ gtest_main/fast:
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/own_message_publisher.o: src/own_message_publisher.cpp.o
+
+.PHONY : src/own_message_publisher.o
+
+# target to build an object file
+src/own_message_publisher.cpp.o:
+	$(MAKE) -f CMakeFiles/own_message_publisher.dir/build.make CMakeFiles/own_message_publisher.dir/src/own_message_publisher.cpp.o
+.PHONY : src/own_message_publisher.cpp.o
+
+src/own_message_publisher.i: src/own_message_publisher.cpp.i
+
+.PHONY : src/own_message_publisher.i
+
+# target to preprocess a source file
+src/own_message_publisher.cpp.i:
+	$(MAKE) -f CMakeFiles/own_message_publisher.dir/build.make CMakeFiles/own_message_publisher.dir/src/own_message_publisher.cpp.i
+.PHONY : src/own_message_publisher.cpp.i
+
+src/own_message_publisher.s: src/own_message_publisher.cpp.s
+
+.PHONY : src/own_message_publisher.s
+
+# target to generate assembly for a file
+src/own_message_publisher.cpp.s:
+	$(MAKE) -f CMakeFiles/own_message_publisher.dir/build.make CMakeFiles/own_message_publisher.dir/src/own_message_publisher.cpp.s
+.PHONY : src/own_message_publisher.cpp.s
+
 src/turtle_circle_publisher.o: src/turtle_circle_publisher.cpp.o
 
 .PHONY : src/turtle_circle_publisher.o
@@ -517,21 +726,59 @@ src/turtle_circle_publisher.cpp.s:
 	$(MAKE) -f CMakeFiles/turtle_circle_publisher.dir/build.make CMakeFiles/turtle_circle_publisher.dir/src/turtle_circle_publisher.cpp.s
 .PHONY : src/turtle_circle_publisher.cpp.s
 
+src/turtle_pose_subscriber.o: src/turtle_pose_subscriber.cpp.o
+
+.PHONY : src/turtle_pose_subscriber.o
+
+# target to build an object file
+src/turtle_pose_subscriber.cpp.o:
+	$(MAKE) -f CMakeFiles/turtle_pose_subscriber.dir/build.make CMakeFiles/turtle_pose_subscriber.dir/src/turtle_pose_subscriber.cpp.o
+.PHONY : src/turtle_pose_subscriber.cpp.o
+
+src/turtle_pose_subscriber.i: src/turtle_pose_subscriber.cpp.i
+
+.PHONY : src/turtle_pose_subscriber.i
+
+# target to preprocess a source file
+src/turtle_pose_subscriber.cpp.i:
+	$(MAKE) -f CMakeFiles/turtle_pose_subscriber.dir/build.make CMakeFiles/turtle_pose_subscriber.dir/src/turtle_pose_subscriber.cpp.i
+.PHONY : src/turtle_pose_subscriber.cpp.i
+
+src/turtle_pose_subscriber.s: src/turtle_pose_subscriber.cpp.s
+
+.PHONY : src/turtle_pose_subscriber.s
+
+# target to generate assembly for a file
+src/turtle_pose_subscriber.cpp.s:
+	$(MAKE) -f CMakeFiles/turtle_pose_subscriber.dir/build.make CMakeFiles/turtle_pose_subscriber.dir/src/turtle_pose_subscriber.cpp.s
+.PHONY : src/turtle_pose_subscriber.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... rebuild_cache"
+	@echo "... install/strip"
 	@echo "... edit_cache"
-	@echo "... test"
+	@echo "... turtle_pose_subscriber"
+	@echo "... rostopic_examples_genpy"
+	@echo "... list_install_components"
+	@echo "... rostopic_examples_generate_messages_py"
+	@echo "... rostopic_examples_generate_messages_nodejs"
 	@echo "... install/local"
+	@echo "... rostopic_examples_genlisp"
+	@echo "... rostopic_examples_generate_messages_lisp"
+	@echo "... rostopic_examples_geneus"
+	@echo "... rostopic_examples_generate_messages_eus"
+	@echo "... test"
+	@echo "... rostopic_examples_gennodejs"
+	@echo "... rostopic_examples_gencpp"
+	@echo "... own_message_publisher"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... clean_test_results"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
@@ -542,22 +789,31 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_eus"
+	@echo "... turtle_circle_publisher"
+	@echo "... rostopic_examples_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... tests"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... turtle_circle_publisher"
-	@echo "... install/strip"
+	@echo "... std_msgs_generate_messages_py"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_eus"
+	@echo "... _rostopic_examples_generate_messages_check_deps_Person"
+	@echo "... clean_test_results"
+	@echo "... rostopic_examples_generate_messages"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... src/own_message_publisher.o"
+	@echo "... src/own_message_publisher.i"
+	@echo "... src/own_message_publisher.s"
 	@echo "... src/turtle_circle_publisher.o"
 	@echo "... src/turtle_circle_publisher.i"
 	@echo "... src/turtle_circle_publisher.s"
+	@echo "... src/turtle_pose_subscriber.o"
+	@echo "... src/turtle_pose_subscriber.i"
+	@echo "... src/turtle_pose_subscriber.s"
 .PHONY : help
 
 

@@ -1,0 +1,3 @@
+[ 33%] Built target turtle_circle_publisher
+[ 66%] Built target turtle_pose_subscriber
+[100%] Built target own_message_publisher
