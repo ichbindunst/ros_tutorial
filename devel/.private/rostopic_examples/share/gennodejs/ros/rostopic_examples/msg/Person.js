@@ -39,7 +39,7 @@ class Person {
         this.sex = initObj.sex
       }
       else {
-        this.sex = 0;
+        this.sex = '';
       }
     }
   }
@@ -51,7 +51,7 @@ class Person {
     // Serialize message field [age]
     bufferOffset = _serializer.uint8(obj.age, buffer, bufferOffset);
     // Serialize message field [sex]
-    bufferOffset = _serializer.uint8(obj.sex, buffer, bufferOffset);
+    bufferOffset = _serializer.string(obj.sex, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -64,14 +64,15 @@ class Person {
     // Deserialize message field [age]
     data.age = _deserializer.uint8(buffer, bufferOffset);
     // Deserialize message field [sex]
-    data.sex = _deserializer.uint8(buffer, bufferOffset);
+    data.sex = _deserializer.string(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
     let length = 0;
     length += object.name.length;
-    return length + 6;
+    length += object.sex.length;
+    return length + 9;
   }
 
   static datatype() {
@@ -81,7 +82,7 @@ class Person {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'b3f7ec37d11629ec3010e27635cf22a9';
+    return '325fe16279a15ea654618c53abf5bb96';
   }
 
   static messageDefinition() {
@@ -89,11 +90,8 @@ class Person {
     return `
     string name
     uint8  age
-    uint8  sex
+    string sex
     
-    uint8  unknown = 0
-    uint8  male = 1
-    uint8  female = 2
     
     `;
   }
@@ -122,18 +120,11 @@ class Person {
       resolved.sex = msg.sex;
     }
     else {
-      resolved.sex = 0
+      resolved.sex = ''
     }
 
     return resolved;
     }
 };
-
-// Constants for message
-Person.Constants = {
-  UNKNOWN: 0,
-  MALE: 1,
-  FEMALE: 2,
-}
 
 module.exports = Person;

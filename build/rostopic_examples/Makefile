@@ -205,6 +205,19 @@ rostopic_examples_generate_messages_py/fast:
 .PHONY : rostopic_examples_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named own_message_subscriber
+
+# Build rule for target.
+own_message_subscriber: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 own_message_subscriber
+.PHONY : own_message_subscriber
+
+# fast build rule for target.
+own_message_subscriber/fast:
+	$(MAKE) -f CMakeFiles/own_message_subscriber.dir/build.make CMakeFiles/own_message_subscriber.dir/build
+.PHONY : own_message_subscriber/fast
+
+#=============================================================================
 # Target rules for targets named rostopic_examples_generate_messages_nodejs
 
 # Build rule for target.
@@ -268,6 +281,19 @@ rostopic_examples_generate_messages_eus: cmake_check_build_system
 rostopic_examples_generate_messages_eus/fast:
 	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_eus.dir/build.make CMakeFiles/rostopic_examples_generate_messages_eus.dir/build
 .PHONY : rostopic_examples_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named publisher_subscriber
+
+# Build rule for target.
+publisher_subscriber: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 publisher_subscriber
+.PHONY : publisher_subscriber
+
+# fast build rule for target.
+publisher_subscriber/fast:
+	$(MAKE) -f CMakeFiles/publisher_subscriber.dir/build.make CMakeFiles/publisher_subscriber.dir/build
+.PHONY : publisher_subscriber/fast
 
 #=============================================================================
 # Target rules for targets named rostopic_examples_gennodejs
@@ -699,6 +725,60 @@ src/own_message_publisher.cpp.s:
 	$(MAKE) -f CMakeFiles/own_message_publisher.dir/build.make CMakeFiles/own_message_publisher.dir/src/own_message_publisher.cpp.s
 .PHONY : src/own_message_publisher.cpp.s
 
+src/own_message_subscriber.o: src/own_message_subscriber.cpp.o
+
+.PHONY : src/own_message_subscriber.o
+
+# target to build an object file
+src/own_message_subscriber.cpp.o:
+	$(MAKE) -f CMakeFiles/own_message_subscriber.dir/build.make CMakeFiles/own_message_subscriber.dir/src/own_message_subscriber.cpp.o
+.PHONY : src/own_message_subscriber.cpp.o
+
+src/own_message_subscriber.i: src/own_message_subscriber.cpp.i
+
+.PHONY : src/own_message_subscriber.i
+
+# target to preprocess a source file
+src/own_message_subscriber.cpp.i:
+	$(MAKE) -f CMakeFiles/own_message_subscriber.dir/build.make CMakeFiles/own_message_subscriber.dir/src/own_message_subscriber.cpp.i
+.PHONY : src/own_message_subscriber.cpp.i
+
+src/own_message_subscriber.s: src/own_message_subscriber.cpp.s
+
+.PHONY : src/own_message_subscriber.s
+
+# target to generate assembly for a file
+src/own_message_subscriber.cpp.s:
+	$(MAKE) -f CMakeFiles/own_message_subscriber.dir/build.make CMakeFiles/own_message_subscriber.dir/src/own_message_subscriber.cpp.s
+.PHONY : src/own_message_subscriber.cpp.s
+
+src/publisher_subscriber.o: src/publisher_subscriber.cpp.o
+
+.PHONY : src/publisher_subscriber.o
+
+# target to build an object file
+src/publisher_subscriber.cpp.o:
+	$(MAKE) -f CMakeFiles/publisher_subscriber.dir/build.make CMakeFiles/publisher_subscriber.dir/src/publisher_subscriber.cpp.o
+.PHONY : src/publisher_subscriber.cpp.o
+
+src/publisher_subscriber.i: src/publisher_subscriber.cpp.i
+
+.PHONY : src/publisher_subscriber.i
+
+# target to preprocess a source file
+src/publisher_subscriber.cpp.i:
+	$(MAKE) -f CMakeFiles/publisher_subscriber.dir/build.make CMakeFiles/publisher_subscriber.dir/src/publisher_subscriber.cpp.i
+.PHONY : src/publisher_subscriber.cpp.i
+
+src/publisher_subscriber.s: src/publisher_subscriber.cpp.s
+
+.PHONY : src/publisher_subscriber.s
+
+# target to generate assembly for a file
+src/publisher_subscriber.cpp.s:
+	$(MAKE) -f CMakeFiles/publisher_subscriber.dir/build.make CMakeFiles/publisher_subscriber.dir/src/publisher_subscriber.cpp.s
+.PHONY : src/publisher_subscriber.cpp.s
+
 src/turtle_circle_publisher.o: src/turtle_circle_publisher.cpp.o
 
 .PHONY : src/turtle_circle_publisher.o
@@ -767,6 +847,7 @@ help:
 	@echo "... rostopic_examples_genpy"
 	@echo "... list_install_components"
 	@echo "... rostopic_examples_generate_messages_py"
+	@echo "... own_message_subscriber"
 	@echo "... rostopic_examples_generate_messages_nodejs"
 	@echo "... install/local"
 	@echo "... rostopic_examples_genlisp"
@@ -774,6 +855,7 @@ help:
 	@echo "... rostopic_examples_geneus"
 	@echo "... rostopic_examples_generate_messages_eus"
 	@echo "... test"
+	@echo "... publisher_subscriber"
 	@echo "... rostopic_examples_gennodejs"
 	@echo "... rostopic_examples_gencpp"
 	@echo "... own_message_publisher"
@@ -808,6 +890,12 @@ help:
 	@echo "... src/own_message_publisher.o"
 	@echo "... src/own_message_publisher.i"
 	@echo "... src/own_message_publisher.s"
+	@echo "... src/own_message_subscriber.o"
+	@echo "... src/own_message_subscriber.i"
+	@echo "... src/own_message_subscriber.s"
+	@echo "... src/publisher_subscriber.o"
+	@echo "... src/publisher_subscriber.i"
+	@echo "... src/publisher_subscriber.s"
 	@echo "... src/turtle_circle_publisher.o"
 	@echo "... src/turtle_circle_publisher.i"
 	@echo "... src/turtle_circle_publisher.s"

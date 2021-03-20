@@ -27,8 +27,6 @@ ros/ros.h
 /home/yao/ros_tutorials/src/rostopic_examples/src/ros/ros.h
 rostopic_examples/Person.h
 /home/yao/ros_tutorials/src/rostopic_examples/src/rostopic_examples/Person.h
-std_msgs/String.h
-/home/yao/ros_tutorials/src/rostopic_examples/src/std_msgs/String.h
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h
@@ -675,22 +673,6 @@ ros/forwards.h
 /opt/ros/kinetic/include/ros/ros/forwards.h
 
 /opt/ros/kinetic/include/rosconsole/macros_generated.h
-
-/opt/ros/kinetic/include/std_msgs/String.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
 
 /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 ros/macros.h

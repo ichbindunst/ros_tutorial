@@ -1,0 +1,10 @@
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:[m[K In member function '[01m[Kvoid Publisher_Subscriber::velocity_pub()[m[K':
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:24:13:[m[K [01;31m[Kerror: [m[K'[01m[Kgeometry[m[K' has not been declared
+             geometry::Twist velocity_pub_msg;
+[01;32m[K             ^[m[K
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:25:13:[m[K [01;31m[Kerror: [m[K'[01m[Kvelocity_pub_msg[m[K' was not declared in this scope
+             velocity_pub_msg.linear.x = 0.5;
+[01;32m[K             ^[m[K
+make[2]: *** [CMakeFiles/publisher_subscriber.dir/src/publisher_subscriber.cpp.o] Error 1
+make[1]: *** [CMakeFiles/publisher_subscriber.dir/all] Error 2
+make: *** [all] Error 2

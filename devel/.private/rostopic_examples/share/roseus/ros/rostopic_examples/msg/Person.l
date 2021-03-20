@@ -12,15 +12,6 @@
 ;;//! \htmlinclude Person.msg.html
 
 
-(intern "*UNKNOWN*" (find-package "ROSTOPIC_EXAMPLES::PERSON"))
-(shadow '*UNKNOWN* (find-package "ROSTOPIC_EXAMPLES::PERSON"))
-(defconstant rostopic_examples::Person::*UNKNOWN* 0)
-(intern "*MALE*" (find-package "ROSTOPIC_EXAMPLES::PERSON"))
-(shadow '*MALE* (find-package "ROSTOPIC_EXAMPLES::PERSON"))
-(defconstant rostopic_examples::Person::*MALE* 1)
-(intern "*FEMALE*" (find-package "ROSTOPIC_EXAMPLES::PERSON"))
-(shadow '*FEMALE* (find-package "ROSTOPIC_EXAMPLES::PERSON"))
-(defconstant rostopic_examples::Person::*FEMALE* 2)
 (defclass rostopic_examples::Person
   :super ros::object
   :slots (_name _age _sex ))
@@ -30,12 +21,12 @@
    (&key
     ((:name __name) "")
     ((:age __age) 0)
-    ((:sex __sex) 0)
+    ((:sex __sex) "")
     )
    (send-super :init)
    (setq _name (string __name))
    (setq _age (round __age))
-   (setq _sex (round __sex))
+   (setq _sex (string __sex))
    self)
   (:name
    (&optional __name)
@@ -53,8 +44,8 @@
     4 (length _name)
     ;; uint8 _age
     1
-    ;; uint8 _sex
-    1
+    ;; string _sex
+    4 (length _sex)
     ))
   (:serialize
    (&optional strm)
@@ -64,8 +55,8 @@
        (write-long (length _name) s) (princ _name s)
      ;; uint8 _age
        (write-byte _age s)
-     ;; uint8 _sex
-       (write-byte _sex s)
+     ;; string _sex
+       (write-long (length _sex) s) (princ _sex s)
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
@@ -74,27 +65,24 @@
      (let (n) (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4) (setq _name (subseq buf ptr- (+ ptr- n))) (incf ptr- n))
    ;; uint8 _age
      (setq _age (sys::peek buf ptr- :char)) (incf ptr- 1)
-   ;; uint8 _sex
-     (setq _sex (sys::peek buf ptr- :char)) (incf ptr- 1)
+   ;; string _sex
+     (let (n) (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4) (setq _sex (subseq buf ptr- (+ ptr- n))) (incf ptr- n))
    ;;
    self)
   )
 
-(setf (get rostopic_examples::Person :md5sum-) "b3f7ec37d11629ec3010e27635cf22a9")
+(setf (get rostopic_examples::Person :md5sum-) "325fe16279a15ea654618c53abf5bb96")
 (setf (get rostopic_examples::Person :datatype-) "rostopic_examples/Person")
 (setf (get rostopic_examples::Person :definition-)
       "string name
 uint8  age
-uint8  sex
+string sex
 
-uint8  unknown = 0
-uint8  male = 1
-uint8  female = 2
 
 ")
 
 
 
-(provide :rostopic_examples/Person "b3f7ec37d11629ec3010e27635cf22a9")
+(provide :rostopic_examples/Person "325fe16279a15ea654618c53abf5bb96")
 
 

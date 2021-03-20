@@ -211,8 +211,15 @@ target_link_libraries(turtle_circle_publisher ${catkin_LIBRARIES})
 add_executable(turtle_pose_subscriber src/turtle_pose_subscriber.cpp)
 target_link_libraries(turtle_pose_subscriber ${catkin_LIBRARIES})
 
+add_executable(publisher_subscriber src/publisher_subscriber.cpp)
+target_link_libraries(publisher_subscriber ${catkin_LIBRARIES})
+
 add_executable(own_message_publisher src/own_message_publisher.cpp)
 target_link_libraries(own_message_publisher ${catkin_LIBRARIES})
 add_dependencies(own_message_publisher ${PROJECT_NAME}_generate_messages_cpp)
+
+add_executable(own_message_subscriber src/own_message_subscriber.cpp)
+target_link_libraries(own_message_subscriber ${catkin_LIBRARIES})
+add_dependencies(own_message_subscriber ${PROJECT_NAME}_generate_messages_cpp)
 
 

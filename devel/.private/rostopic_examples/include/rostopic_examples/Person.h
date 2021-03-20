@@ -26,12 +26,12 @@ struct Person_
   Person_()
     : name()
     , age(0)
-    , sex(0)  {
+    , sex()  {
     }
   Person_(const ContainerAllocator& _alloc)
     : name(_alloc)
     , age(0)
-    , sex(0)  {
+    , sex(_alloc)  {
   (void)_alloc;
     }
 
@@ -43,16 +43,11 @@ struct Person_
    typedef uint8_t _age_type;
   _age_type age;
 
-   typedef uint8_t _sex_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _sex_type;
   _sex_type sex;
 
 
 
-  enum {
-    unknown = 0u,
-    male = 1u,
-    female = 2u,
-  };
 
 
   typedef boost::shared_ptr< ::rostopic_examples::Person_<ContainerAllocator> > Ptr;
@@ -66,12 +61,6 @@ typedef boost::shared_ptr< ::rostopic_examples::Person > PersonPtr;
 typedef boost::shared_ptr< ::rostopic_examples::Person const> PersonConstPtr;
 
 // constants requiring out of line definition
-
-   
-
-   
-
-   
 
 
 
@@ -135,12 +124,12 @@ struct MD5Sum< ::rostopic_examples::Person_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "b3f7ec37d11629ec3010e27635cf22a9";
+    return "325fe16279a15ea654618c53abf5bb96";
   }
 
   static const char* value(const ::rostopic_examples::Person_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xb3f7ec37d11629ecULL;
-  static const uint64_t static_value2 = 0x3010e27635cf22a9ULL;
+  static const uint64_t static_value1 = 0x325fe16279a15ea6ULL;
+  static const uint64_t static_value2 = 0x54618c53abf5bb96ULL;
 };
 
 template<class ContainerAllocator>
@@ -161,11 +150,8 @@ struct Definition< ::rostopic_examples::Person_<ContainerAllocator> >
   {
     return "string name\n\
 uint8  age\n\
-uint8  sex\n\
+string sex\n\
 \n\
-uint8  unknown = 0\n\
-uint8  male = 1\n\
-uint8  female = 2\n\
 ";
   }
 
@@ -210,7 +196,7 @@ struct Printer< ::rostopic_examples::Person_<ContainerAllocator> >
     s << indent << "age: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.age);
     s << indent << "sex: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.sex);
+    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.sex);
   }
 };
 

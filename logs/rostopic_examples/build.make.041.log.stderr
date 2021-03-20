@@ -1,0 +1,41 @@
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:32:1:[m[K [01;31m[Kerror: [m[Kexpected '[01m[K;[m[K' after class definition
+ }
+[01;32m[K ^[m[K
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:[m[K In constructor '[01m[KPublisher_Subscriber::Publisher_Subscriber()[m[K':
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:14:45:[m[K [01;31m[Kerror: [m[K'[01m[Kgeometry[m[K' was not declared in this scope
+             vel_pub = node_handle.advertise<geometry::Twist>("/velocity_publisher", 10);
+[01;32m[K                                             ^[m[K
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:14:35:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+             vel_pub = node_handle.advertise<geometry::Twist>("/velocity_publisher", 10);
+[01;32m[K                                   ^[m[K
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:14:87:[m[K [01;31m[Kerror: [m[Kno matching function for call to '[01m[Kros::NodeHandle::advertise(const char [20], int)[m[K'
+             vel_pub = node_handle.advertise<geometry::Twist>("/velocity_publisher", 10);
+[01;32m[K                                                                                       ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)
+     Publisher advertise(const std::string& topic, uint32_t queue_size, bool latch = false)
+[01;32m[K               ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:14:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+             vel_pub = node_handle.advertise<geometry::Twist>("/velocity_publisher", 10);
+[01;32m[K                                                                                       ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)
+   Publisher advertise(const std::string& topic, uint32_t queue_size,
+[01;32m[K             ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:14:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+             vel_pub = node_handle.advertise<geometry::Twist>("/velocity_publisher", 10);
+[01;32m[K                                                                                       ^[m[K
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:[m[K In member function '[01m[Kvoid Publisher_Subscriber::velocity_pub()[m[K':
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:24:13:[m[K [01;31m[Kerror: [m[K'[01m[Kgeometry[m[K' has not been declared
+             geometry::Twist velocity_pub_msg;
+[01;32m[K             ^[m[K
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:25:13:[m[K [01;31m[Kerror: [m[K'[01m[Kvelocity_pub_msg[m[K' was not declared in this scope
+             velocity_pub_msg.linear.x = 0.5;
+[01;32m[K             ^[m[K
+make[2]: *** [CMakeFiles/publisher_subscriber.dir/src/publisher_subscriber.cpp.o] Error 1
+make[1]: *** [CMakeFiles/publisher_subscriber.dir/all] Error 2
+make: *** [all] Error 2

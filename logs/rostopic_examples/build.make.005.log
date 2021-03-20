@@ -1,5 +1,0 @@
-[35m[1mScanning dependencies of target turtle_pose_subscriber[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/turtle_pose_subscriber.dir/src/turtle_pose_subscriber.cpp.o[0m
-[ 75%] Built target turtle_circle_publisher
-[100%] [32m[1mLinking CXX executable /home/yao/ros_tutorials/devel/.private/rostopic_examples/lib/rostopic_examples/turtle_pose_subscriber[0m
-[100%] Built target turtle_pose_subscriber

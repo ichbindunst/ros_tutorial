@@ -1,0 +1,13 @@
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:[m[K In function '[01m[Kint main(int, char**)[m[K':
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:11:25:[m[K [01;31m[Kerror: [m[K'[01m[Kros::Subscriber Publisher_Subscriber::vel_sub[m[K' is private
+         ros::Subscriber vel_sub;
+[01;32m[K                         ^[m[K
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:47:17:[m[K [01;31m[Kerror: [m[Kwithin this context
+         pub_sub.vel_sub
+[01;32m[K                 ^[m[K
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/publisher_subscriber.cpp:48:9:[m[K [01;31m[Kerror: [m[Kexpected '[01m[K;[m[K' before '[01m[Kros[m[K'
+         ros::spinOnce();
+[01;32m[K         ^[m[K
+make[2]: *** [CMakeFiles/publisher_subscriber.dir/src/publisher_subscriber.cpp.o] Error 1
+make[1]: *** [CMakeFiles/publisher_subscriber.dir/all] Error 2
+make: *** [all] Error 2

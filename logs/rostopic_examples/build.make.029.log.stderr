@@ -1,0 +1,8 @@
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/own_message_subscriber.cpp:[m[K In function '[01m[Kint main(int, char**)[m[K':
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/own_message_subscriber.cpp:14:66:[m[K [01;31m[Kerror: [m[K'[01m[KchatterCallback[m[K' was not declared in this scope
+     ros::Subscriber sub = nh.subscribe("/own_message_topic", 10, chatterCallback);
+[01;32m[K                                                                  ^[m[K
+make[2]: *** [CMakeFiles/own_message_subscriber.dir/src/own_message_subscriber.cpp.o] Error 1
+make[1]: *** [CMakeFiles/own_message_subscriber.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [all] Error 2

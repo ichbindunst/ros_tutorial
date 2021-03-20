@@ -1,6 +1,0 @@
-[35m[1mScanning dependencies of target own_message_publisher[0m
-[ 66%] Built target turtle_circle_publisher
-[ 66%] Built target turtle_pose_subscriber
-[ 83%] [32mBuilding CXX object CMakeFiles/own_message_publisher.dir/src/own_message_publisher.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/yao/ros_tutorials/devel/.private/rostopic_examples/lib/rostopic_examples/own_message_publisher[0m
-[100%] Built target own_message_publisher

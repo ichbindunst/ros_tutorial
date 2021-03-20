@@ -1,0 +1,24 @@
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/own_message_publisher.cpp:1[m[K:
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/own_message_publisher.cpp:[m[K In function '[01m[Kint main(int, char**)[m[K':
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/own_message_publisher.cpp:21:65:[m[K [01;31m[Kerror: [m[K'[01m[Kperson_msg[m[K' was not declared in this scope
+         ROS_INFO("Publish Person Info: name:%s  age:%d  sex:%d",person_msg.name.c_str(), person_msg.age, person_msg.sex);
+[01;32m[K                                                                 ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:346:165:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K'
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+[01;32m[K                                                                                                                                                                     ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:379:7:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K'
+       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+[01;32m[K       ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:561:35:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KROS_LOG_COND[m[K'
+ #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+[01;32m[K                                   ^[m[K
+[01m[K/opt/ros/kinetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KROS_LOG[m[K'
+ #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+[01;32m[K                       ^[m[K
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/own_message_publisher.cpp:21:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KROS_INFO[m[K'
+         ROS_INFO("Publish Person Info: name:%s  age:%d  sex:%d",person_msg.name.c_str(), person_msg.age, person_msg.sex);
+[01;32m[K         ^[m[K
+make[2]: *** [CMakeFiles/own_message_publisher.dir/src/own_message_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/own_message_publisher.dir/all] Error 2
+make: *** [all] Error 2

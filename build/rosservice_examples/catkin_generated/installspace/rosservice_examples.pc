@@ -1,0 +1,8 @@
+prefix=/home/yao/ros_tutorials/install
+
+Name: rosservice_examples
+Description: Description of rosservice_examples
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs

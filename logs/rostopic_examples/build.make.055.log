@@ -1,0 +1,20 @@
+[35m[1mScanning dependencies of target publisher_subscriber[0m
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  5%] [32mBuilding CXX object CMakeFiles/publisher_subscriber.dir/src/publisher_subscriber.cpp.o[0m
+[ 17%] Built target turtle_circle_publisher
+[ 29%] Built target turtle_pose_subscriber
+[ 29%] Built target std_msgs_generate_messages_eus
+[ 29%] Built target std_msgs_generate_messages_lisp
+[ 29%] Built target _rostopic_examples_generate_messages_check_deps_Person
+[ 41%] Built target rostopic_examples_generate_messages_py
+[ 47%] Built target rostopic_examples_generate_messages_nodejs
+[ 52%] Built target rostopic_examples_generate_messages_lisp
+[ 58%] Built target rostopic_examples_generate_messages_cpp
+[ 70%] Built target rostopic_examples_generate_messages_eus
+[ 82%] Built target own_message_subscriber
+[ 94%] Built target own_message_publisher
+[ 94%] Built target rostopic_examples_generate_messages
+[100%] [32m[1mLinking CXX executable /home/yao/ros_tutorials/devel/.private/rostopic_examples/lib/rostopic_examples/publisher_subscriber[0m
+[100%] Built target publisher_subscriber

@@ -1,0 +1,1 @@
+/home/yao/ros_tutorials/devel/.private/rosservice_examples/lib/pkgconfig/rosservice_examples.pc

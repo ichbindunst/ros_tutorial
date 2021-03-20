@@ -8,24 +8,16 @@ import struct
 
 
 class Person(genpy.Message):
-  _md5sum = "b3f7ec37d11629ec3010e27635cf22a9"
+  _md5sum = "325fe16279a15ea654618c53abf5bb96"
   _type = "rostopic_examples/Person"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """string name
 uint8  age
-uint8  sex
+string sex
 
-uint8  unknown = 0
-uint8  male = 1
-uint8  female = 2
 """
-  # Pseudo-constants
-  unknown = 0
-  male = 1
-  female = 2
-
   __slots__ = ['name','age','sex']
-  _slot_types = ['string','uint8','uint8']
+  _slot_types = ['string','uint8','string']
 
   def __init__(self, *args, **kwds):
     """
@@ -49,11 +41,11 @@ uint8  female = 2
       if self.age is None:
         self.age = 0
       if self.sex is None:
-        self.sex = 0
+        self.sex = ''
     else:
       self.name = ''
       self.age = 0
-      self.sex = 0
+      self.sex = ''
 
   def _get_types(self):
     """
@@ -73,8 +65,14 @@ uint8  female = 2
         _x = _x.encode('utf-8')
         length = len(_x)
       buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
-      _x = self
-      buff.write(_get_struct_2B().pack(_x.age, _x.sex))
+      _x = self.age
+      buff.write(_get_struct_B().pack(_x))
+      _x = self.sex
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -95,10 +93,18 @@ uint8  female = 2
         self.name = str[start:end].decode('utf-8', 'rosmsg')
       else:
         self.name = str[start:end]
-      _x = self
       start = end
-      end += 2
-      (_x.age, _x.sex,) = _get_struct_2B().unpack(str[start:end])
+      end += 1
+      (self.age,) = _get_struct_B().unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.sex = str[start:end].decode('utf-8', 'rosmsg')
+      else:
+        self.sex = str[start:end]
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -117,8 +123,14 @@ uint8  female = 2
         _x = _x.encode('utf-8')
         length = len(_x)
       buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
-      _x = self
-      buff.write(_get_struct_2B().pack(_x.age, _x.sex))
+      _x = self.age
+      buff.write(_get_struct_B().pack(_x))
+      _x = self.sex
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -140,10 +152,18 @@ uint8  female = 2
         self.name = str[start:end].decode('utf-8', 'rosmsg')
       else:
         self.name = str[start:end]
-      _x = self
       start = end
-      end += 2
-      (_x.age, _x.sex,) = _get_struct_2B().unpack(str[start:end])
+      end += 1
+      (self.age,) = _get_struct_B().unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.sex = str[start:end].decode('utf-8', 'rosmsg')
+      else:
+        self.sex = str[start:end]
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -152,9 +172,9 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_2B = None
-def _get_struct_2B():
-    global _struct_2B
-    if _struct_2B is None:
-        _struct_2B = struct.Struct("<2B")
-    return _struct_2B
+_struct_B = None
+def _get_struct_B():
+    global _struct_B
+    if _struct_B is None:
+        _struct_B = struct.Struct("<B")
+    return _struct_B

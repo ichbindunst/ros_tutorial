@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/yao/ros_tutorials/devel/.private/rosservice_examples/setup.sh

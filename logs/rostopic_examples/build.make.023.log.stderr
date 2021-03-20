@@ -1,0 +1,7 @@
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/own_message_publisher.cpp:[m[K In function '[01m[Kint main(int, char**)[m[K':
+[01m[K/home/yao/ros_tutorials/src/rostopic_examples/src/own_message_publisher.cpp:17:23:[m[K [01;31m[Kerror: [m[K'[01m[Kmale[m[K' was not declared in this scope
+         own_msg.sex = male;
+[01;32m[K                       ^[m[K
+make[2]: *** [CMakeFiles/own_message_publisher.dir/src/own_message_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/own_message_publisher.dir/all] Error 2
+make: *** [all] Error 2

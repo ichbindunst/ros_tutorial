@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/yao/ros_tutorials/build/rostopic_examples
 CMakeFiles/turtle_pose_subscriber.dir/all:
 	$(MAKE) -f CMakeFiles/turtle_pose_subscriber.dir/build.make CMakeFiles/turtle_pose_subscriber.dir/depend
 	$(MAKE) -f CMakeFiles/turtle_pose_subscriber.dir/build.make CMakeFiles/turtle_pose_subscriber.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=23,24 "Built target turtle_pose_subscriber"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=27,28 "Built target turtle_pose_subscriber"
 .PHONY : CMakeFiles/turtle_pose_subscriber.dir/all
 
 # Include target in all.
@@ -136,7 +136,7 @@ CMakeFiles/rostopic_examples_generate_messages_py.dir/all: CMakeFiles/std_msgs_g
 CMakeFiles/rostopic_examples_generate_messages_py.dir/all: CMakeFiles/_rostopic_examples_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_py.dir/build.make CMakeFiles/rostopic_examples_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_py.dir/build.make CMakeFiles/rostopic_examples_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=19,20 "Built target rostopic_examples_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=23,24 "Built target rostopic_examples_generate_messages_py"
 .PHONY : CMakeFiles/rostopic_examples_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -162,6 +162,43 @@ clean: CMakeFiles/rostopic_examples_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/own_message_subscriber.dir
+
+# All Build rule for target.
+CMakeFiles/own_message_subscriber.dir/all: CMakeFiles/rostopic_examples_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/own_message_subscriber.dir/build.make CMakeFiles/own_message_subscriber.dir/depend
+	$(MAKE) -f CMakeFiles/own_message_subscriber.dir/build.make CMakeFiles/own_message_subscriber.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=14,15 "Built target own_message_subscriber"
+.PHONY : CMakeFiles/own_message_subscriber.dir/all
+
+# Include target in all.
+all: CMakeFiles/own_message_subscriber.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/own_message_subscriber.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/own_message_subscriber.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles 0
+.PHONY : CMakeFiles/own_message_subscriber.dir/rule
+
+# Convenience name for target.
+own_message_subscriber: CMakeFiles/own_message_subscriber.dir/rule
+
+.PHONY : own_message_subscriber
+
+# clean rule for target.
+CMakeFiles/own_message_subscriber.dir/clean:
+	$(MAKE) -f CMakeFiles/own_message_subscriber.dir/build.make CMakeFiles/own_message_subscriber.dir/clean
+.PHONY : CMakeFiles/own_message_subscriber.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/own_message_subscriber.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/rostopic_examples_generate_messages_nodejs.dir
 
 # All Build rule for target.
@@ -169,7 +206,7 @@ CMakeFiles/rostopic_examples_generate_messages_nodejs.dir/all: CMakeFiles/std_ms
 CMakeFiles/rostopic_examples_generate_messages_nodejs.dir/all: CMakeFiles/_rostopic_examples_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_nodejs.dir/build.make CMakeFiles/rostopic_examples_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_nodejs.dir/build.make CMakeFiles/rostopic_examples_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=18 "Built target rostopic_examples_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=22 "Built target rostopic_examples_generate_messages_nodejs"
 .PHONY : CMakeFiles/rostopic_examples_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -234,7 +271,7 @@ CMakeFiles/rostopic_examples_generate_messages_lisp.dir/all: CMakeFiles/std_msgs
 CMakeFiles/rostopic_examples_generate_messages_lisp.dir/all: CMakeFiles/_rostopic_examples_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_lisp.dir/build.make CMakeFiles/rostopic_examples_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_lisp.dir/build.make CMakeFiles/rostopic_examples_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=17 "Built target rostopic_examples_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=21 "Built target rostopic_examples_generate_messages_lisp"
 .PHONY : CMakeFiles/rostopic_examples_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -299,7 +336,7 @@ CMakeFiles/rostopic_examples_generate_messages_eus.dir/all: CMakeFiles/std_msgs_
 CMakeFiles/rostopic_examples_generate_messages_eus.dir/all: CMakeFiles/_rostopic_examples_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_eus.dir/build.make CMakeFiles/rostopic_examples_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_eus.dir/build.make CMakeFiles/rostopic_examples_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=15,16 "Built target rostopic_examples_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=19,20 "Built target rostopic_examples_generate_messages_eus"
 .PHONY : CMakeFiles/rostopic_examples_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -321,6 +358,43 @@ CMakeFiles/rostopic_examples_generate_messages_eus.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/rostopic_examples_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/publisher_subscriber.dir
+
+# All Build rule for target.
+CMakeFiles/publisher_subscriber.dir/all:
+	$(MAKE) -f CMakeFiles/publisher_subscriber.dir/build.make CMakeFiles/publisher_subscriber.dir/depend
+	$(MAKE) -f CMakeFiles/publisher_subscriber.dir/build.make CMakeFiles/publisher_subscriber.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=16,17 "Built target publisher_subscriber"
+.PHONY : CMakeFiles/publisher_subscriber.dir/all
+
+# Include target in all.
+all: CMakeFiles/publisher_subscriber.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/publisher_subscriber.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/publisher_subscriber.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles 0
+.PHONY : CMakeFiles/publisher_subscriber.dir/rule
+
+# Convenience name for target.
+publisher_subscriber: CMakeFiles/publisher_subscriber.dir/rule
+
+.PHONY : publisher_subscriber
+
+# clean rule for target.
+CMakeFiles/publisher_subscriber.dir/clean:
+	$(MAKE) -f CMakeFiles/publisher_subscriber.dir/build.make CMakeFiles/publisher_subscriber.dir/clean
+.PHONY : CMakeFiles/publisher_subscriber.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/publisher_subscriber.dir/clean
 
 .PHONY : clean
 
@@ -816,7 +890,7 @@ clean: CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 CMakeFiles/turtle_circle_publisher.dir/all:
 	$(MAKE) -f CMakeFiles/turtle_circle_publisher.dir/build.make CMakeFiles/turtle_circle_publisher.dir/depend
 	$(MAKE) -f CMakeFiles/turtle_circle_publisher.dir/build.make CMakeFiles/turtle_circle_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=21,22 "Built target turtle_circle_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=25,26 "Built target turtle_circle_publisher"
 .PHONY : CMakeFiles/turtle_circle_publisher.dir/all
 
 # Include target in all.
@@ -854,7 +928,7 @@ CMakeFiles/rostopic_examples_generate_messages_cpp.dir/all: CMakeFiles/std_msgs_
 CMakeFiles/rostopic_examples_generate_messages_cpp.dir/all: CMakeFiles/_rostopic_examples_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_cpp.dir/build.make CMakeFiles/rostopic_examples_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/rostopic_examples_generate_messages_cpp.dir/build.make CMakeFiles/rostopic_examples_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=14 "Built target rostopic_examples_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yao/ros_tutorials/build/rostopic_examples/CMakeFiles --progress-num=18 "Built target rostopic_examples_generate_messages_cpp"
 .PHONY : CMakeFiles/rostopic_examples_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
