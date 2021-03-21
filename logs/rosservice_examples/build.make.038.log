@@ -1,0 +1,17 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[ 26%] Built target turtle_spawn_client
+[ 26%] Built target turtle_command_server
+[ 26%] Built target std_msgs_generate_messages_lisp
+[ 26%] Built target std_msgs_generate_messages_nodejs
+[ 26%] Built target _rosservice_examples_generate_messages_check_deps_Person
+[ 40%] Built target rosservice_examples_generate_messages_eus
+[ 46%] Built target rosservice_examples_generate_messages_lisp
+[ 60%] Built target rosservice_examples_generate_messages_py
+[ 66%] Built target rosservice_examples_generate_messages_cpp
+[ 73%] Built target rosservice_examples_generate_messages_nodejs
+[ 73%] Built target rosservice_examples_gencpp
+[ 73%] Built target rosservice_examples_generate_messages
+[ 86%] Built target own_service_client
+[100%] Built target own_service_server

@@ -11,5 +11,6 @@ export CMAKE_PREFIX_PATH="/home/yao/ros_tutorials/devel/.private/rosservice_exam
 export LD_LIBRARY_PATH="/home/yao/ros_tutorials/devel/.private/rosservice_examples/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/home/yao/ros_tutorials/devel/.private/rosservice_examples/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/yao/ros_tutorials/build/rosservice_examples'
+export PYTHONPATH="/home/yao/ros_tutorials/devel/.private/rosservice_examples/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/yao/ros_tutorials/devel/.private/rosservice_examples/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/yao/ros_tutorials/src/rosservice_examples:$ROS_PACKAGE_PATH"

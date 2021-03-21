@@ -10,6 +10,9 @@ project(rosservice_examples)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
+  geometry_msgs
+  turtlesim
+  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
@@ -53,11 +56,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+add_service_files(
+  FILES
+  Person.srv
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -67,10 +69,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -104,7 +106,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES rosservice_examples
-   CATKIN_DEPENDS roscpp std_msgs
+   CATKIN_DEPENDS roscpp std_msgs turtlesim geometry_msgs message_runtime
 #  DEPENDS system_lib
 )
 
@@ -209,3 +211,12 @@ target_link_libraries(turtle_spawn_client ${catkin_LIBRARIES})
 
 add_executable(turtle_command_server src/turtle_command_server.cpp)
 target_link_libraries(turtle_command_server ${catkin_LIBRARIES})
+
+add_executable(own_service_server src/own_service_server.cpp)
+target_link_libraries(own_service_server ${catkin_LIBRARIES})
+add_dependencies(own_service_server ${PROJECT_NAME}_gencpp)
+
+add_executable(own_service_client src/own_service_client.cpp)
+target_link_libraries(own_service_client ${catkin_LIBRARIES})
+add_dependencies(own_service_client ${PROJECT_NAME}_gencpp)
+

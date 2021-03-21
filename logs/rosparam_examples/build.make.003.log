@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target turtle_param_command[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/turtle_param_command.dir/src/turtle_param_command.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/yao/ros_tutorials/devel/.private/rosparam_examples/lib/rosparam_examples/turtle_param_command[0m
+[100%] Built target turtle_param_command

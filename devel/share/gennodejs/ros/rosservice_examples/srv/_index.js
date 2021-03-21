@@ -1,0 +1,1 @@
+/home/yao/ros_tutorials/devel/.private/rosservice_examples/share/gennodejs/ros/rosservice_examples/srv/_index.js

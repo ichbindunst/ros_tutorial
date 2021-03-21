@@ -1,0 +1,6 @@
+CMake Error at /home/yao/ros_tutorials/src/rosservice_examples/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "rosservice_examples_generate_message_cpp" of target
+  "own_service_client" does not exist.
+
+
+make: *** [cmake_check_build_system] Error 1

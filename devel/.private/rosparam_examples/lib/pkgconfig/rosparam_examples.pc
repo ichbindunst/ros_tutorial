@@ -1,0 +1,8 @@
+prefix=/home/yao/ros_tutorials/devel/.private/rosparam_examples
+
+Name: rosparam_examples
+Description: Description of rosparam_examples
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp

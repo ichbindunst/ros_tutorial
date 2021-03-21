@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.9.2, 2021-03-18T16:58:33. -->
+<!-- Written by QtCreator 4.9.2, 2021-03-21T20:52:38. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -113,7 +113,8 @@
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges">
      <value type="QString">PATH=/opt/ros/kinetic/bin:/home/yao/.nvm/versions/node/v14.4.0/bin:/home/yao/.local/share/umake/bin:/home/yao/bin:/home/yao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin</value>
      <value type="QString">PWD=/home/yao/ros_tutorials</value>
-     <value type="QString">SHLVL=156</value>
+     <value type="QString">ROS_PACKAGE_PATH=/home/yao/ros_tutorials/src/rosparam_examples:/home/yao/ros_tutorials/src/rosservice_examples:/home/yao/ros_tutorials/src/rostopic_examples:/home/yao/ros_tutorials/src/tf_examples:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/iiwa_control:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/iiwa_description:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/iiwa_gazebo:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/iiwa_msgs:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/iiwa_ros:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/iiwa_hw:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/iiwa_moveit:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/my_iiwa_moveit:/home/yao/alt_iiwa_ros_ws/src/iiwa_stack/my_iiwa_ros:/opt/ros/kinetic/share</value>
+     <value type="QString">SHLVL=208</value>
      <value type="QString">_=/usr/bin/env</value>
     </valuelist>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Debug</value>

@@ -1,0 +1,1 @@
+/home/yao/ros_tutorials/devel/.private/rosservice_examples/lib/python2.7/dist-packages/rosservice_examples/__init__.py

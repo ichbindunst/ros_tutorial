@@ -1,0 +1,17 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[ 11%] Built target turtle_pose_subscriber
+[ 23%] Built target turtle_circle_publisher
+[ 35%] Built target publisher_subscriber
+[ 35%] Built target std_msgs_generate_messages_nodejs
+[ 35%] Built target std_msgs_generate_messages_lisp
+[ 35%] Built target std_msgs_generate_messages_eus
+[ 35%] Built target _rostopic_examples_generate_messages_check_deps_Person
+[ 47%] Built target rostopic_examples_generate_messages_py
+[ 52%] Built target rostopic_examples_generate_messages_cpp
+[ 64%] Built target rostopic_examples_generate_messages_eus
+[ 70%] Built target rostopic_examples_generate_messages_lisp
+[ 76%] Built target rostopic_examples_generate_messages_nodejs
+[ 76%] Built target rostopic_examples_generate_messages
+[ 88%] Built target own_message_subscriber
+[100%] Built target own_message_publisher
